@@ -4,7 +4,7 @@
         <span class="px-2">/</span>
         <h5 class="text-capitalize">{{selected_product.category}}</h5>
     </div>
-    <h5 class="py-3 text-secondary">Date: {{selected_product.createdAt}}</h5>
+    <!--<h5 class="py-3 text-secondary">Date: {{selected_product.createdAt}}</h5>-->
     <h5 class="py-3">Title: {{selected_product.title}}</h5>
         <div class="card mb-3" style="max-width: 540px">
             <div class="row g-0">
@@ -17,7 +17,7 @@
                     <p class="card-subtitle fw-bold fs-3 "><span class="text-secondary ">Price:</span> ${{selected_product.price-(selected_product.price*(selected_product.discountPercentage/100))}}<sub class="text-decoration-line-through fs-6 fw-normal text-danger"> ${{selected_product.price}}</sub></p>
                     <p class="card-text text-wrap fs-3" >{{selected_product.description}}</p>
                 <p class="card-text">
-                    <small class="text-body-secondary">{{selected_product.createdAt | date : 'MMMM YYYY' }}</small>
+                  <!-- <small class="text-body-secondary">{{selected_product.createdAt | date : 'MMMM YYYY' }}</small>-->
                 </p>
                 </div>
             </div>
